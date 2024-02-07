@@ -1,0 +1,10 @@
+build:
+  gpu: true
+  python_version: "3.11"
+  python_packages:
+    - transformers==4.34.1
+    - torch
+    - accelerate
+    - bitsandbytes
+predict: "predict.py:Predictor"
+train: "train.py:train"
